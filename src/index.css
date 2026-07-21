@@ -121,3 +121,93 @@
     justify-content: center;
   }
 }
+
+.country-page {
+  padding: 40px;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+}
+
+
+.hero img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+
+.hero h1 {
+  font-size: 45px;
+}
+
+
+.hero button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  background: #6a0dad;
+  color:white;
+  cursor:pointer;
+}
+
+
+
+.info,
+.places {
+  margin-top: 60px;
+  text-align:center;
+}
+
+
+.cards {
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  margin-top:30px;
+}
+
+
+.small-card {
+
+  background:white;
+  padding:25px;
+  width:250px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  transition:.3s;
+
+}
+
+
+.small-card:hover {
+  transform:translateY(-10px);
+}
+
+
+
+@media(max-width:768px){
+
+.hero{
+ flex-direction:column;
+}
+
+
+.cards{
+ flex-direction:column;
+ align-items:center;
+}
+
+
+.hero img{
+ width:90%;
+}
+
+}
