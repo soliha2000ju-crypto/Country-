@@ -1,0 +1,123 @@
+/* USA style 🇺🇸 */
+.usa .card {
+  background: linear-gradient(135deg, #ffffff, #dbeafe);
+  border-top: 6px solid #b22234;
+}
+
+.usa h1 {
+  color: #1e3a8a;
+}
+
+.usa p {
+  color: #333;
+}
+
+
+/* Uzbekistan style 🇺🇿 */
+.uzbekistan .card {
+  background: linear-gradient(135deg, #ffffff, #d1fae5);
+  border-top: 6px solid #1eb53a;
+}
+
+.uzbekistan h1 {
+  color: #0099b5;
+}
+
+.uzbekistan p {
+  color: #333;
+}
+
+
+/* umumiy card */
+.card {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: linear-gradient(135deg, #6a0dad, #9b30ff);
+  color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Logo */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Menu */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffd700;
+}
+
+
+/* 2 ta odam ismi */
+.team {
+  display: flex;
+  gap: 12px;
+}
+
+.team span {
+  padding: 8px 14px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.team span:hover {
+  background: white;
+  color: #6a0dad;
+  transform: translateY(-3px);
+}
+
+
+/* Telefon uchun */
+@media(max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .team {
+    justify-content: center;
+  }
+}
